@@ -1,0 +1,56 @@
+/* src/styles/components/scanner.css */
+.scanner-container {
+    max-width: 40rem;
+    margin: var(--space-xl) auto;
+    padding: var(--space-md);
+  }
+  
+  .scanner-title {
+    font-size: var(--text-2xl);
+    text-align: center;
+    margin-bottom: var(--space-lg);
+    color: var(--dark);
+  }
+  
+  #reader {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+  }
+  
+  .scan-result {
+    margin-top: var(--space-md);
+    padding: var(--space-md);
+    background: var(--white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+  }
+  
+  .scan-success {
+    color: var(--success);
+    border-left: 4px solid var(--success);
+  }
+  
+  .scan-error {
+    color: var(--danger);
+    border-left: 4px solid var(--danger);
+  }
+  
+  .permission-denied, .permission-prompt {
+    text-align: center;
+    padding: var(--space-xl);
+    background: var(--white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    margin-top: var(--space-md);
+  }
+  
+  .permission-denied {
+    border-left: 4px solid var(--danger);
+  }
+  
+  .permission-prompt {
+    border-left: 4px solid var(--primary);
+  }

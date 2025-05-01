@@ -1,0 +1,20 @@
+/* src/index.css */
+@import './base.css';
+@import './components/auth.css';
+@import './components/navbar.css';
+@import './components/scanner.css';
+@import './pages/dashboard.css';
+@import './components/qrcode.css';
+
+/* Font Import (add to your HTML or use @import) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+body {
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import StudentRegister from './components/Auth/StudentRegister';
+import Scanner from './components/Scanner';
+import QRCodePage from './components/QRCodePage';
+import Login from './components/Auth/Login';
+import Dashboard from './pages/Dashboard';
+import Navbar from './components/Navbar';
+import './styles/index.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <div className="container">
+        <Routes>
+          <Route path="/register" element={<StudentRegister />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/scanner" element={<Scanner />} />
+          <Route path="/qrcode" element={<QRCodePage />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

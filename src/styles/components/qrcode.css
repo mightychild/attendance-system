@@ -1,0 +1,18 @@
+/* src/styles/components/qrcode.css */
+.qrcode-container {
+    max-width: 500px;
+    margin: var(--space-xl) auto;
+    padding: var(--space-xl);
+    background: var(--white);
+    border-radius: var(--radius-md);
+    text-align: center;
+  }
+  
+  .qrcode-image {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto var(--space-lg);
+    padding: var(--space-md);
+    background: var(--white);
+    border: 1px solid var(--light);
+  }
