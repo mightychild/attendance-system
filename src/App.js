@@ -5,6 +5,7 @@ import Scanner from './components/Scanner';
 import QRCodePage from './components/QRCodePage';
 import Login from './components/Auth/Login';
 import Dashboard from './pages/Dashboard';
+import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import './styles/index.css';
 
@@ -14,6 +15,8 @@ function App() {
       <Navbar />
       <div className="container">
         <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/register" element={<StudentRegister />} />
           <Route path="/login" element={<Login />} />
           <Route path="/scanner" element={<Scanner />} />

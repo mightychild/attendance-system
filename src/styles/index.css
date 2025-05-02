@@ -4,6 +4,7 @@
 @import './components/navbar.css';
 @import './components/scanner.css';
 @import './pages/dashboard.css';
+@import './pages/home.css';
 @import './components/qrcode.css';
 
 /* Font Import (add to your HTML or use @import) */
