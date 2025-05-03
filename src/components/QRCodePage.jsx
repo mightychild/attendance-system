@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 
+// Generate QR Code
 function QRCodePage() {
   const location = useLocation();
   const qrCode = location.state?.qrCode;
