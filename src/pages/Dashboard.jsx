@@ -21,7 +21,7 @@ function Dashboard() {
     // Simulate data fetch
     const fetchData = async () => {
       try {
-        // Replace with actual API
+        // Replace with actual API call
         const mockData = [
           { id: 1, name: 'John Doe', status: 'present', date: '2023-05-15', course: 'Mathematics' },
           { id: 2, name: 'Jane Smith', status: 'absent', date: '2023-05-15', course: 'Science' },
