@@ -18,7 +18,7 @@ function Dashboard() {
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
-    // Simulate data fetch
+    // Simulate data 
     const fetchData = async () => {
       try {
         // Replace with actual API call
