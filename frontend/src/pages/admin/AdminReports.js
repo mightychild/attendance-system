@@ -183,60 +183,6 @@ const AdminReports = () => {
                 </CardContent>
               </Card>
             </Grid>
-
-            {/* System Health */}
-            {/* <Grid item xs={12}>
-              <Card>
-                <CardContent>
-                  <Box display="flex" alignItems="center" mb={2}>
-                    <AssessmentIcon color="primary" sx={{ mr: 1 }} />
-                    <Typography variant="h6">System Health</Typography>
-                  </Box>
-                  <Grid container spacing={2}>
-                    <Grid item xs={12} md={4}>
-                      <Box textAlign="center" p={2} bgcolor="success.light" borderRadius={1}>
-                        <Typography variant="h4">✓</Typography>
-                        <Typography>QR Security Active</Typography>
-                      </Box>
-                    </Grid>
-                    <Grid item xs={12} md={4}>
-                      <Box textAlign="center" p={2} bgcolor="success.light" borderRadius={1}>
-                        <Typography variant="h4">✓</Typography>
-                        <Typography>Database Connected</Typography>
-                      </Box>
-                    </Grid>
-                    <Grid item xs={12} md={4}>
-                      <Box textAlign="center" p={2} bgcolor="success.light" borderRadius={1}>
-                        <Typography variant="h4">✓</Typography>
-                        <Typography>API Running</Typography>
-                      </Box>
-                    </Grid>
-                  </Grid>
-                </CardContent>
-              </Card>
-            </Grid> */}
-
-            {/* Report Generation */}
-            {/* <Grid item xs={12}>
-              <Card>
-                <CardContent>
-                  <Typography variant="h6" gutterBottom>
-                    Report Generation
-                  </Typography>
-                  <Box display="flex" gap={2} flexWrap="wrap">
-                    <Button variant="contained" startIcon={<DownloadIcon />}>
-                      Export User Report
-                    </Button>
-                    <Button variant="contained" startIcon={<DownloadIcon />}>
-                      Export Course Report
-                    </Button>
-                    <Button variant="contained" startIcon={<DownloadIcon />}>
-                      Export System Logs
-                    </Button>
-                  </Box>
-                </CardContent>
-              </Card>
-            </Grid> */}
           </Grid>
         ) : (
           <Paper sx={{ p: 4, textAlign: 'center' }}>

@@ -677,12 +677,6 @@ const LecturerDashboard = () => {
           onAttendanceMarked={handleAttendanceMarked}
         />
 
-        {/* <Paper sx={{ p: 2, mt: 4, bgcolor: 'grey.100' }}>
-          <Typography variant="caption" color="text.secondary">
-            <strong>Lecturer:</strong> {user?.email} | <strong>Courses:</strong> {courses.length} | 
-            <strong>Selected Course:</strong> {selectedCourse?.courseCode} | <strong>Active Session:</strong> {activeSession ? 'Yes' : 'No'}
-          </Typography>
-        </Paper> */}
       </Box>
     </DashboardLayout>
   );
