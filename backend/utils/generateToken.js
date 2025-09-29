@@ -6,7 +6,7 @@ const signToken = (id) => {
   });
 };
 
-// Create and send token, also set it in a cookie (optional but common)
+// Create and send token, also set it in a cookie
 const createSendToken = (user, statusCode, req, res) => {
   const token = signToken(user._id);
 

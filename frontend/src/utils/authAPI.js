@@ -21,7 +21,7 @@ export const login = async (credentials) => {
   }
 };
 
-// Get current user (will be useful later)
+// Get current user 
 export const getCurrentUser = () => {
   const user = localStorage.getItem('attendanceUser');
   return user ? JSON.parse(user) : null;

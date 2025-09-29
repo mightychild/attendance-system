@@ -11,10 +11,7 @@ const { protect, restrictTo } = require('../middleware/authMiddleware');
 const router = express.Router();
 
 router.use(protect);
-
-// ADD THIS ROUTE
 router.patch('/:id/profile', updateUserProfile);
-
 router.use(restrictTo('super-admin'));
 
 router.get('/', getAllUsers);

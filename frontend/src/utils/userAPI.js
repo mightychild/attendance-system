@@ -40,7 +40,7 @@ export const deleteUser = async (userId) => {
   }
 };
 
-// ADD THIS FUNCTION
+// Update User Profile
 export const updateUserProfile = async (userId, userData) => {
   try {
     const response = await API.patch(`/users/${userId}/profile`, userData);

@@ -50,7 +50,7 @@ export const scanQRCode = async (scanData) => {
   } catch (error) {
     console.error('Error scanning QR code:', error);
     
-    // Provide more specific error messages for the new QR security system
+    // Provide more specific error messages for the QR security system
     let errorMessage = 'Failed to scan QR code';
     
     if (error.response?.data?.message) {

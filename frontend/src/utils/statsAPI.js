@@ -2,18 +2,18 @@ import API from './api';
 
 export const getDashboardStats = async () => {
   try {
-    console.log('🔄 Fetching comprehensive dashboard stats...');
+    console.log('Fetching comprehensive dashboard stats...');
     
     const response = await API.get('/admin/dashboard/stats');
-    console.log('✅ Dashboard stats received:', response.data);
+    console.log('Dashboard stats received:', response.data);
     return response.data.data;
 
   } catch (error) {
-    console.error('❌ Dashboard stats error:', error);
+    console.error('Dashboard stats error:', error);
     
     // Fallback: try individual endpoints
     try {
-      console.log('🔄 Trying individual stats endpoints...');
+      console.log('Trying individual stats endpoints...');
       
       const [courseResponse, userResponse] = await Promise.all([
         API.get('/courses/stats').catch(err => {
@@ -34,7 +34,7 @@ export const getDashboardStats = async () => {
       };
 
     } catch (fallbackError) {
-      console.error('❌ All stats endpoints failed, using full fallback');
+      console.error('All stats endpoints failed, using full fallback');
       return getFullFallbackStats();
     }
   }

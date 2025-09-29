@@ -109,7 +109,7 @@ const QRScanner = ({ open, onClose, session, onAttendanceMarked }) => {
 
     try {
       const response = await scanQRCode({
-        qrCodeData: qrData, // This now contains the token object
+        qrCodeData: qrData, // This contains the token object
         sessionId: session._id
       });
 
@@ -235,11 +235,11 @@ const QRScanner = ({ open, onClose, session, onAttendanceMarked }) => {
                     height: '100%',
                     objectFit: 'cover',
                     borderRadius: '8px',
-                    transform: 'scaleX(-1)' // Mirror for better UX
+                    transform: 'scaleX(-1)'
                   }}
                 />
                 
-                {/* Scanner overlay guide */}
+                {/* Scanner overlay */}
                 <Box
                   sx={{
                     position: 'absolute',

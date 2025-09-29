@@ -50,7 +50,7 @@ export const deleteCourse = async (courseId) => {
   }
 };
 
-// NEW FUNCTION: Get courses by lecturer ID
+// Get courses by lecturer ID
 export const getLecturerCourses = async (lecturerId) => {
   try {
     const response = await API.get(`/courses/lecturer/${lecturerId}`);

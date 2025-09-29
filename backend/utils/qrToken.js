@@ -13,7 +13,7 @@ const signQRToken = (userId, qrSecret) => {
 };
 
 // Verify QR token with a provided secret
-const verifyQRToken = (token, qrSecret) => { // NOW ACCEPTS THE SECRET PARAMETER
+const verifyQRToken = (token, qrSecret) => { // ACCEPTS THE SECRET PARAMETER
   try {
     const decoded = jwt.verify(token, qrSecret); // VERIFIES WITH THE USER'S SECRET
     return { valid: true, expired: false, decoded };
