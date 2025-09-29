@@ -510,12 +510,6 @@ const StudentDashboard = () => {
           cancelText="Cancel"
         />
 
-        {/* Debug Info */}
-        {/* <Paper sx={{ p: 2, mt: 4, bgcolor: 'grey.100' }}>
-          <Typography variant="caption" color="text.secondary">
-            <strong>Student ID:</strong> {user?.universityId} | <strong>Enrollments:</strong> {enrollments.length} | <strong>Available Courses:</strong> {availableCourses.length}
-          </Typography>
-        </Paper> */}
       </Box>
     </DashboardLayout>
   );

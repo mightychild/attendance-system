@@ -329,19 +329,6 @@ const SuperAdminDashboard = () => {
           />
         )}
 
-        {/* Debug Info */}
-        {/* <Paper sx={{ p: 2, mt: 4, bgcolor: 'grey.100' }}>
-          <Box display="flex" justifyContent="space-between" alignItems="center">
-            <Typography variant="caption" color="text.secondary">
-              <strong>User:</strong> {user?.email} | <strong>Role:</strong> {user?.role}
-            </Typography>
-            {stats?.lastUpdated && (
-              <Typography variant="caption" color="text.secondary">
-                Last updated: {new Date(stats.lastUpdated).toLocaleTimeString()}
-              </Typography>
-            )}
-          </Box>
-        </Paper> */}
       </Box>
     </DashboardLayout>
   );
