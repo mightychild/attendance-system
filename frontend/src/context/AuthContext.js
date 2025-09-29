@@ -41,7 +41,6 @@ export const AuthProvider = ({ children }) => {
     setUser(null);
   };
 
-  // ADD THIS FUNCTION
   const updateUser = (userData) => {
     localStorage.setItem('attendanceUser', JSON.stringify(userData));
     setUser(userData);
@@ -52,7 +51,7 @@ export const AuthProvider = ({ children }) => {
     isLoading,
     login,
     logout,
-    updateUser, // ADD THIS
+    updateUser,
     isAuthenticated: !!user,
   };
 
