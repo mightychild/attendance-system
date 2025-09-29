@@ -107,12 +107,6 @@ const AdminCourses = () => {
           />
         )}
 
-        {/* Debug Info */}
-        {/* <Paper sx={{ p: 2, mt: 4, bgcolor: 'grey.100' }}>
-          <Typography variant="caption" color="text.secondary">
-            <strong>Admin:</strong> {user?.email} | <strong>Role:</strong> {user?.role}
-          </Typography>
-        </Paper> */}
       </Box>
     </DashboardLayout>
   );
