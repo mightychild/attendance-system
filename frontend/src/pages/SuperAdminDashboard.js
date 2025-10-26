@@ -39,7 +39,7 @@ const SuperAdminDashboard = () => {
   const [loadingStats, setLoadingStats] = useState(true);
   const [statsError, setStatsError] = useState('');
 
-  // Fetch stats with proper error handling
+  // Fetch stats with proper err
   const fetchStats = async () => {
     try {
       setLoadingStats(true);
